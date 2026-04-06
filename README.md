@@ -14,7 +14,7 @@
 
 ## Overview
 
-The **Fast Lane Hypothesis** proposes that Von Economo Neurons (VENs) implement a biological speed-accuracy tradeoff in social decision circuits. This repository tests that prediction against open NASA behavioral data from **OSD-618** — exposing mice to simultaneous spaceflight stressors (galactic cosmic radiation, hindlimb unloading, social isolation) and measuring cognition across six behavioral assays.
+The **Fast Lane Hypothesis** proposes that Von Economo Neurons (VENs) implement a biological speed-accuracy tradeoff in social decision circuits. This repository tests that prediction against open NASA behavioral data from **OSD-618** - exposing mice to simultaneous spaceflight stressors (galactic cosmic radiation, hindlimb unloading, social isolation) and measuring cognition across six behavioral assays.
 
 The combined stressor condition is treated as a proxy for the **FTD-like VEN ablation** condition from the computational model.
 
@@ -43,15 +43,16 @@ OSDR: [osdr.nasa.gov/bio/repo/data/study/OSD-618](https://osdr.nasa.gov/bio/repo
 ---
 
 ## Repository Structure
+```
 spaceflight-ven-analysis/
-├── data/ ← place TRANSFORMED.csv files here
+├── data/                    ← place TRANSFORMED.csv files here
 ├── analysis/
 │   └── ven_spaceflight_analysis.py
-├── figures/ ← generated PDF figures
-├── results/ ← JSON summary statistics
+├── figures/                 ← generated PDF figures
+├── results/                 ← JSON summary statistics
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## Data Download
@@ -93,7 +94,7 @@ Outputs:
 
 ## Paper
 
-Companion to: **The Fast Lane Hypothesis: Von Economo Neurons Implement a Biological Speed-Accuracy Tradeoff** — Esila Keskin, UWE Bristol (2026)
+Companion to: **The Fast Lane Hypothesis: Von Economo Neurons Implement a Biological Speed-Accuracy Tradeoff** - Esila Keskin, UWE Bristol (2026)
 
 ---
 
