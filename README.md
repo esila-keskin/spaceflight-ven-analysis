@@ -34,7 +34,7 @@ The combined stressor condition is treated as a proxy for the **FTD-like VEN abl
 
 ## Dataset
 
-**NASA OSD-618** — Rienecker et al. (2023)  
+**NASA OSD-618** - Rienecker et al. (2023)  
 DOI: [10.1038/s41598-023-28508-0](https://doi.org/10.1038/s41598-023-28508-0)  
 OSDR: [osdr.nasa.gov/bio/repo/data/study/OSD-618](https://osdr.nasa.gov/bio/repo/data/study/OSD-618)
 
