@@ -45,11 +45,11 @@ OSDR: [osdr.nasa.gov/bio/repo/data/study/OSD-618](https://osdr.nasa.gov/bio/repo
 ## Repository Structure
 ```
 spaceflight-ven-analysis/
-├── data/                    ← place TRANSFORMED.csv files here
+├── data/ <- place TRANSFORMED.csv files here
 ├── analysis/
 │   └── ven_spaceflight_analysis.py
-├── figures/                 ← generated PDF figures
-├── results/                 ← JSON summary statistics
+├── figures/ <- generated PDF figures
+├── results/ <- JSON summary statistics
 ├── requirements.txt
 └── README.md
 ```
