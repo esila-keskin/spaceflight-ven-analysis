@@ -64,7 +64,7 @@ def build_condition_map():
     # 349-368: group -> ctrl / rad
     # 369-388: hindlimb+isolation    -> iso / combined
     # Females offset ~150:
-    # 459-508: group → ctrl / rad
+    # 459-508: group -> ctrl / rad
     # 509-548: hindlimb+isolation    -> iso / combined
     # We assign by parsing Animal_ID numeric part and radiation indicator
 
@@ -147,7 +147,7 @@ def summarise(df, metric, conds=None):
 def print_stats(summary, label):
     print(f"\n   {label} — means:")
     for c, s in summary.items():
-        print(f"     {c:<12} {s['mean']:.3f} ± {s['sem']:.3f}  (n={s['n']})")
+        print(f" {c:<12} {s['mean']:.3f} ± {s['sem']:.3f}  (n={s['n']})")
     groups = [np.array(s["raw"]) for s in summary.values() if len(s["raw"]) > 1]
     if len(groups) >= 2:
         F, p = stats.f_oneway(*groups)
@@ -193,7 +193,7 @@ def analyse_nor(results):
     print("\n Novel Object Recognition ")
     df = load_csv("LSDS-48_Novel_Object_Recognition_618_NOR_TRANSFORMED.csv")
 
-    # DI = (novel - familiar) / total — already computed in NOR_Day4_5min_DI
+    # DI = (novel - familiar) / total - already computed in NOR_Day4_5min_DI
     metric = "NOR_Day4_5min_DI"
     summary = summarise(df, metric)
     print_stats(summary, "NOR Discrimination Index (5min)")
@@ -208,7 +208,7 @@ def analyse_rawm(results):
     print("\n Radial Arm Water Maze ")
     df = load_csv("LSDS-48_Radial_Arm_Water_Maze_618_RAWM_TRANSFORMED.csv")
 
-    # Use Block2 errors (later learning — most sensitive to memory deficits)
+    # Use Block2 errors (later learning - most sensitive to memory deficits)
     metric = "RAWM_D1_Block2_Errors"
     summary = summarise(df, metric)
     print_stats(summary, "RAWM Block 2 Errors")
@@ -270,7 +270,7 @@ def make_overview_figure(res):
     fig = plt.figure(figsize=(18, 10))
     fig.suptitle(
         "VEN Fast Lane Hypothesis: Spaceflight Stressor Behavioral Signatures\n"
-        "NASA OSD-618 — n=118 mice, 4 conditions",
+        "NASA OSD-618 - n=118 mice, 4 conditions",
         fontweight="bold", fontsize=13)
     gs = gridspec.GridSpec(2, 3, figure=fig, hspace=0.6, wspace=0.45)
 
@@ -284,7 +284,7 @@ def make_overview_figure(res):
     ]
     for pos, key, title in panels:
         ax = fig.add_subplot(pos)
-        entry   = res.get(key, {})
+        entry = res.get(key, {})
         summary = entry.get("summary", {})
         ylabel  = entry.get("ylabel", "")
         if summary:
@@ -318,8 +318,8 @@ def make_deficit_heatmap(res):
 
     matrix = np.full((len(keys), len(conds)), np.nan)
     for i, key in enumerate(keys):
-        entry     = res.get(key, {})
-        ctrl      = entry.get("summary", {}).get("control", {})
+        entry = res.get(key, {})
+        ctrl = entry.get("summary", {}).get("control", {})
         if not ctrl:
             continue
         ctrl_mean = ctrl["mean"]
@@ -338,7 +338,7 @@ def make_deficit_heatmap(res):
     ax.set_yticklabels(labels, fontsize=10)
     plt.colorbar(im, ax=ax, label="Z-score vs Control\n(blue = better, red = worse)")
     ax.set_title(
-        "Behavioral Deficit Heatmap — NASA OSD-618\n"
+        "Behavioral Deficit Heatmap - NASA OSD-618\n"
         "Aligned to Fast Lane Hypothesis predictions",
         fontweight="bold", fontsize=11)
     for i in range(len(keys)):
@@ -367,7 +367,7 @@ def main():
         except FileNotFoundError as e:
             print(e)
         except Exception as e:
-            print(f"   [WARNING] {e}")
+            print(f" [WARNING] {e}")
 
     make_overview_figure(results)
     make_deficit_heatmap(results)
