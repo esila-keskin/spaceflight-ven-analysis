@@ -1,0 +1,158 @@
+{
+  "social_sociability": {
+    "metric": "sociability_spi",
+    "ylabel": "Sociability Index\n(time near mouse / total)",
+    "summary": {
+      "control": {
+        "mean": 0.7010371748452708,
+        "sem": 0.010978656767881845,
+        "n": 56
+      },
+      "radiation": {
+        "mean": 0.7360551247303743,
+        "sem": 0.014587561931954,
+        "n": 19
+      },
+      "isolation": {
+        "mean": 0.6918394797797202,
+        "sem": 0.019090032673581774,
+        "n": 18
+      },
+      "combined": {
+        "mean": 0.7020001130963127,
+        "sem": 0.01868700269087616,
+        "n": 19
+      }
+    }
+  },
+  "social_memory": {
+    "metric": "memory_spi",
+    "ylabel": "Social Memory Index\n(novel / total)",
+    "summary": {
+      "control": {
+        "mean": 0.6482715297482577,
+        "sem": 0.013911978575775879,
+        "n": 55
+      },
+      "radiation": {
+        "mean": 0.6685863416449972,
+        "sem": 0.021256130931719606,
+        "n": 19
+      },
+      "isolation": {
+        "mean": 0.6646459238001006,
+        "sem": 0.02953338891165484,
+        "n": 17
+      },
+      "combined": {
+        "mean": 0.6103690896541646,
+        "sem": 0.033739505568917104,
+        "n": 18
+      }
+    }
+  },
+  "nor": {
+    "metric": "NOR_Day4_5min_DI",
+    "ylabel": "Discrimination Index\n(novel - fam) / total",
+    "summary": {
+      "control": {
+        "mean": 0.18827534917241384,
+        "sem": 0.03077732700875905,
+        "n": 58
+      },
+      "radiation": {
+        "mean": 0.2841740596,
+        "sem": 0.03924793830286807,
+        "n": 20
+      },
+      "isolation": {
+        "mean": 0.18488384257894738,
+        "sem": 0.07558392140710683,
+        "n": 19
+      },
+      "combined": {
+        "mean": 0.2205022683888889,
+        "sem": 0.04649605178511116,
+        "n": 18
+      }
+    }
+  },
+  "rawm": {
+    "metric": "RAWM_D1_Block2_Errors",
+    "ylabel": "Errors (Block 2)\nLower = better",
+    "summary": {
+      "control": {
+        "mean": 3.6436781609827587,
+        "sem": 0.2464866481951383,
+        "n": 58
+      },
+      "radiation": {
+        "mean": 3.63333333335,
+        "sem": 0.33412187435642443,
+        "n": 20
+      },
+      "isolation": {
+        "mean": 2.2280701754210526,
+        "sem": 0.3016659736840947,
+        "n": 19
+      },
+      "combined": {
+        "mean": 3.25000000005,
+        "sem": 0.41666666665105256,
+        "n": 20
+      }
+    }
+  },
+  "open_field": {
+    "metric": "OpenField_distance",
+    "ylabel": "Total Distance (cm)\nLocomotor control",
+    "summary": {
+      "control": {
+        "mean": 2901.0413559322033,
+        "sem": 70.62000756365663,
+        "n": 59
+      },
+      "radiation": {
+        "mean": 3032.201,
+        "sem": 81.22343996622753,
+        "n": 20
+      },
+      "isolation": {
+        "mean": 2952.4789473684214,
+        "sem": 122.46152119116053,
+        "n": 19
+      },
+      "combined": {
+        "mean": 3024.9655,
+        "sem": 148.48974381112018,
+        "n": 20
+      }
+    }
+  },
+  "balance": {
+    "metric": "BB_5mm_distance",
+    "ylabel": "Distance Traversed 5mm beam (cm)\nMotor control",
+    "summary": {
+      "control": {
+        "mean": 84.67913898305085,
+        "sem": 2.1719699683430447,
+        "n": 59
+      },
+      "radiation": {
+        "mean": 81.53163684210527,
+        "sem": 4.712763504806339,
+        "n": 19
+      },
+      "isolation": {
+        "mean": 80.42334210526316,
+        "sem": 3.093251688873736,
+        "n": 19
+      },
+      "combined": {
+        "mean": 101.693615,
+        "sem": 8.778755688575611,
+        "n": 20
+      }
+    }
+  }
+}
