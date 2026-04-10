@@ -10,7 +10,7 @@ Required files (place in data/ directory):
   3. LSDS-48_Novel_Object_Recognition_618_NOR_TRANSFORMED.csv
   4. LSDS-48_Radial_Arm_Water_Maze_618_RAWM_TRANSFORMED.csv
   5. LSDS-48_Open_Field_618_OF_TRANSFORMED.csv
-  6. LSDS-48_Balance_Beam_618_BalanceBeam_TRANSFORMED.csv
+  6. LSDS-48_Balance_Beam_618_BalanceBeam_TRANSFORMED.csv 
 
 Design (from Rienecker et al. 2023, doi:10.1038/s41598-023-28508-0):
   Factors: Housing (Group / SI / SI+HU)  x  Radiation (sham / GCRsim 50cGy)  x  Sex
